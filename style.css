@@ -193,13 +193,12 @@ h1 em {
   border-radius: 8px;
   font-weight: 500;
   font-size: 14px;
-  transition: background 0.2s, transform 0.1s;
+  transition: background 0.2s;
 }
 
 .btn-primary:hover {
   background: var(--accent-light);
   text-decoration: none;
-  transform: translateY(-1px);
 }
 
 .btn-ghost {
