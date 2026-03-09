@@ -14,4 +14,4 @@ Just open `index.html` in a browser. No build step needed.
 
 ## Deployment
 
-Hosted via GitHub Pages / Netlify at [theminimaldev.com](https://theminimaldev.com).
+Hosted via GitHub Pages at [theminimaldev.com](https://theminimaldev.com).
