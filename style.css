@@ -175,6 +175,11 @@ h1 em {
   margin-bottom: 2rem;
 }
 
+.hero-sub a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;
