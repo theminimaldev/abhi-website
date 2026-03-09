@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Jangra — Android Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-name">Abhishek Jangra</span>
+    <div class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#community">Community</a>
+      <a href="mailto:theminimaldev@gmail.com" class="btn-contact">Contact</a>
+      <button class="btn-theme" id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-label">Senior Android Engineer</p>
+        <h1>Building mobile products<br>that <em>actually</em> matter.</h1>
+        <p class="hero-sub">7+ years shipping Android at scale — from Deliveroo's grocery platform to Gojek's super-app with 50M+ downloads. Deep in platform architecture, design systems, and test infrastructure.</p>
+        <div class="hero-actions">
+          <a href="mailto:theminimaldev@gmail.com" class="btn-primary">Get in touch</a>
+          <a href="https://www.linkedin.com/in/theminimaldev/" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Bangalore, India</span>
+          <span>Available for immediate hire</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="profile.jpg" alt="Abhishek Jangra" />
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">Mar 2025 – Feb 2026</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Software Engineer</h3>
+                <p class="company">Deliveroo <span class="company-note">(acquired by DoorDash)</span> · Picking App, Grocery/Retail</p>
+              </div>
+            </div>
+            <ul>
+              <li>Halved the release cycle from 2 weeks to 1 week by driving E2E test reliability from <strong>45% to 100%</strong> and running the golden order flow on staging with real data.</li>
+              <li>Achieved <strong>zero data loss</strong> on app restarts and crashes by architecting persistent event tracking using RoomDB and WorkManager. Rolled out to 100% of users with zero production incidents.</li>
+              <li>Unlocked rollout to ~2k partner sites across 8 brands in the UK, driving <strong>~£1M incremental revenue</strong>, by delivering Scheduled Orders UX improvements with zero Android regressions at launch.</li>
+              <li>Shipped Variable Weight Pre-Auth expected to unlock <strong>£5M in savings</strong> by onboarding onto the server-driven UI framework (Rooblocks) within 1 week — zero reported bugs.</li>
+              <li>Led biweekly sprint planning, mentored 3+ junior engineers, and authored TDDs, ADRs, and engineering one-pagers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">Jan 2024 – Mar 2025</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Lead Software Engineer</h3>
+                <p class="company">Gojek · Mobile Platform</p>
+              </div>
+            </div>
+            <ul>
+              <li>Delivered a <strong>99.9% crash-free rate</strong> on the Gojek consumer app, monitored via Firebase, triaging escalated Slack alerts and driving prioritisation before issues impacted users at scale.</li>
+              <li>Achieved a <strong>95% reduction in memory usage</strong> and over 50% reduction in main thread usage for key UI components.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">Oct 2021 – Jan 2024</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Lead Software Engineer</h3>
+                <p class="company">Gojek · UX Engineering</p>
+              </div>
+            </div>
+            <ul>
+              <li>Led development of the industry-leading <a href="https://asphalt.gojek.io/" target="_blank">Aloha design system</a> SDK on Android, used by <strong>50+ products internally</strong>, saving 3000+ hours per product in mobile development.</li>
+              <li>Achieved <strong>100% reduction</strong> in app launch and binary compatibility crashes due to the Aloha SDK.</li>
+              <li>Developed a DexGuard plugin to scan the entire codebase and automatically whitelist images — 100% reliability on production, zero effort from feature developers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">May 2020 – Oct 2021</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Software Engineer</h3>
+                <p class="company">Gojek · Transport</p>
+              </div>
+            </div>
+            <ul>
+              <li>Led development of a high-performance <strong>Live Tracking SDK</strong> for Android, serving over 5 million daily active users.</li>
+              <li>Shipped <strong>GoTransit</strong> as the sole Android developer — now the #1 public transport ticket seller in Jakarta, with multiple industry awards.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">Jul 2018 – May 2020</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer</h3>
+                <p class="company">Gojek · Transport</p>
+              </div>
+            </div>
+            <ul>
+              <li>Delivered <a href="https://medium.com/gojekengineering/the-road-to-safer-rides-e2a4225423ba" target="_blank">Safe Trip Kit</a> end-to-end (Android, Backend — Clojure, Web — React) — a feature with Live Trip Tracking and Emergency Support that <strong>directly saved the lives of 2 Gojek users</strong> within 6 months of launch.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title">Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="tags">
+            <span>Kotlin</span><span>Java</span><span>Ruby</span><span>Clojure</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Android</h4>
+          <div class="tags">
+            <span>Jetpack Compose</span><span>Android SDK</span><span>RoomDB</span>
+            <span>WorkManager</span><span>Dagger2 / Hilt</span><span>RxJava</span>
+            <span>Coroutines</span><span>Espresso</span><span>DexGuard</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Architecture</h4>
+          <div class="tags">
+            <span>MVVM</span><span>Clean Architecture</span><span>Multi-module</span>
+            <span>Design Systems / SDKs</span><span>E2E Test Infrastructure</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Tools</h4>
+          <div class="tags">
+            <span>Git</span><span>CI/CD</span><span>Firebase</span><span>Datadog</span>
+            <span>Snowflake</span><span>Kafka</span><span>Redis</span><span>gRPC</span><span>Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section id="community">
+      <h2 class="section-title">Community</h2>
+      <div class="community-grid">
+        <div class="community-card">
+          <div class="community-icon">✍️</div>
+          <h3>Writing</h3>
+          <p>Blogging on <a href="https://theminimaldev.com" target="_blank">theminimaldev.com</a> with <strong>50k+ total views</strong> across topics like developer setup and animation tips.</p>
+        </div>
+        <div class="community-card">
+          <div class="community-icon">🎓</div>
+          <h3>Mentoring</h3>
+          <p>Served as a coach for the <strong>Gojek Android Bootcamp</strong> in 2024 and 2019, mentoring 50+ students into Android development.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-row">
+        <div>
+          <h3>B.Tech. Electrical and Electronics Engineering</h3>
+          <p class="company">Indian Institute of Technology, Ropar</p>
+        </div>
+        <span class="timeline-period">2014 – 2018</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Abhishek Jangra</span>
+      <div class="footer-links">
+        <a href="mailto:theminimaldev@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/theminimaldev/" target="_blank">LinkedIn</a>
+        <a href="https://theminimaldev.com" target="_blank">Blog</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const html = document.documentElement;
+    const btn = document.getElementById('theme-toggle');
+
+    function isDaytime() {
+      const h = new Date().getHours();
+      return h >= 7 && h < 19; // light 7am–7pm, dark otherwise
+    }
+
+    function applyTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'light' ? '🌙' : '☀️';
+      btn.title = theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
+      localStorage.setItem('theme', theme);
+    }
+
+    // On load: use saved preference, else detect from time
+    const saved = localStorage.getItem('theme');
+    applyTheme(saved ?? (isDaytime() ? 'light' : 'dark'));
+
+    btn.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    });
+  </script>
+</body>
+</html>
