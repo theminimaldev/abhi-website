@@ -492,12 +492,12 @@ mark {
 /* ─── Education ─────────────────────────────────────────────────────────────── */
 .education-row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem 2rem;
+  padding: 1.5rem;
 }
 
 .education-row h3 {
@@ -505,6 +505,15 @@ mark {
   font-weight: 600;
   color: var(--text);
   margin-bottom: 3px;
+}
+
+.education-row .timeline-period {
+  display: flex;
+  align-items: center;
+}
+
+.education-row .company {
+  margin-bottom: 0;
 }
 
 /* ─── Contact ───────────────────────────────────────────────────────────────── */
