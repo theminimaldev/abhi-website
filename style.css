@@ -312,6 +312,8 @@ h1 em {
 
 .timeline-content a { color: var(--accent-light); }
 
+.role-separator { color: var(--muted); font-weight: 300; }
+
 .timeline-summary {
   font-size: 14px;
   color: var(--muted);
