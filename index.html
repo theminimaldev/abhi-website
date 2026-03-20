@@ -238,12 +238,10 @@
       html.setAttribute('data-theme', theme);
       btn.textContent = theme === 'light' ? '🌙' : '☀️';
       btn.title = theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
-      localStorage.setItem('theme', theme);
     }
 
-    // On load: use saved preference, else detect from time
-    const saved = localStorage.getItem('theme');
-    applyTheme(saved ?? (isDaytime() ? 'light' : 'dark'));
+    // On load: always use time-based theme (dark after 7pm)
+    applyTheme(isDaytime() ? 'light' : 'dark');
 
     btn.addEventListener('click', () => {
       const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
