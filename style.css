@@ -311,6 +311,19 @@ h1 em {
 
 .timeline-content a { color: var(--accent-light); }
 
+.timeline-summary {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-summary:last-child { margin-bottom: 0; }
+
+.experience-cta {
+  margin-top: 2rem;
+}
+
 /* ─── Skills ────────────────────────────────────────────────────────────────── */
 .skills-grid {
   display: grid;
