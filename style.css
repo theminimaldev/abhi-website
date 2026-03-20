@@ -311,10 +311,15 @@ h1 em {
 }
 
 mark {
-  background: #fef08a;
-  color: #713f12;
+  background: #3d2e0a;
+  color: #e8c97a;
   border-radius: 3px;
   padding: 0 3px;
+}
+
+html[data-theme="light"] mark {
+  background: #fef08a;
+  color: #713f12;
 }
 
 .hero-meta {
