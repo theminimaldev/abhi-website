@@ -258,12 +258,13 @@ h1 em {
   grid-template-columns: 130px 1fr;
   gap: 2rem;
   padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-item:first-child {
   border-top: 1px solid var(--border);
 }
 
-.timeline-item:last-child {
-  border-bottom: 1px solid var(--border);
-}
 
 .timeline-meta {
   padding-top: 2px;
@@ -320,8 +321,15 @@ h1 em {
 
 .timeline-summary:last-child { margin-bottom: 0; }
 
-.experience-cta {
-  margin-top: 2rem;
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.section-header .section-title {
+  margin-bottom: 0;
 }
 
 /* ─── Skills ────────────────────────────────────────────────────────────────── */
