@@ -455,6 +455,49 @@ mark {
   border-radius: 6px;
 }
 
+/* ─── Projects ─────────────────────────────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.project-link {
+  font-size: 13px;
+  color: var(--accent-light);
+  font-weight: 500;
+}
+
+.project-link:hover { text-decoration: none; opacity: 0.8; }
+
+.project-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 /* ─── Community ────────────────────────────────────────────────────────────── */
 .community-grid {
   display: grid;
@@ -615,7 +658,8 @@ footer {
     font-size: 13px;
   }
 
-  .exp-grid { grid-template-columns: 1fr; }
+  .exp-grid,
+  .projects-grid { grid-template-columns: 1fr; }
 
   .education-row {
     flex-direction: column;
