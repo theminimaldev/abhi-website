@@ -294,24 +294,33 @@ mark {
   filter: grayscale(20%);
 }
 
-/* ─── Timeline ────────────────────────────────────────────────────────────────── */
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.timeline-item {
+/* ─── Experience Cards ───────────────────────────────────────────────────────── */
+.exp-grid {
   display: grid;
-  grid-template-columns: 130px 1fr;
-  gap: 2rem;
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--border);
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
-.timeline-item:first-child {
-  border-top: 1px solid var(--border);
+.exp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
 }
+
+.exp-card .timeline-period {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.exp-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.exp-card h3 a { color: var(--accent-light); }
 
 
 .timeline-meta {
@@ -596,10 +605,7 @@ footer {
     font-size: 13px;
   }
 
-  .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
+  .exp-grid { grid-template-columns: 1fr; }
 
   .education-row {
     flex-direction: column;
