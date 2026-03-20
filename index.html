@@ -27,12 +27,14 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-text">
-        <p class="hero-label">Senior Android Engineer</p>
-        <h1>Android engineer.<br>System thinker.<br>Design obsessive.</h1>
+        <p class="greeting-hello">Hello,</p>
+        <h1 class="hero-name">I'm Abhishek</h1>
+        <p class="hero-tagline"><span class="tagline-text" id="tagline">Senior Android Engineer.</span></p>
         <p class="hero-sub">7+ years shipping Android at scale — from <a href="https://deliveroo.co.uk" target="_blank">Deliveroo</a>'s grocery platform to <a href="https://www.gojek.com" target="_blank">Gojek</a>'s super-app with 50M+ downloads. Deep expertise in Android platform architecture, SDK development, and test infrastructure.</p>
-        <div class="hero-actions">
-          <a href="mailto:theminimaldev@gmail.com" class="btn-primary">Get in touch</a>
-          <a href="https://www.linkedin.com/in/theminimaldev/" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+        <div class="contact-buttons" style="margin-bottom:1.5rem">
+          <a href="mailto:theminimaldev@gmail.com" class="btn-primary">Email</a>
+          <a href="https://www.linkedin.com/in/theminimaldev/" target="_blank" class="btn-primary">LinkedIn ↗</a>
+          <a href="https://x.com/theminimaldev_" target="_blank" class="btn-primary">X (Twitter) ↗</a>
         </div>
         <div class="hero-meta">
           <span>📍 Bangalore, India · Open to relocating · Available for immediate hire</span>
@@ -168,6 +170,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const taglines = ['Senior Android Engineer.', 'System Thinker.', 'Design Obsessive.', 'Team Leader.'];
+    let taglineIndex = 0;
+    const taglineEl = document.getElementById('tagline');
+
+    function cycleTagline() {
+      taglineEl.classList.add('fade-out');
+      setTimeout(() => {
+        taglineIndex = (taglineIndex + 1) % taglines.length;
+        taglineEl.textContent = taglines[taglineIndex];
+        taglineEl.classList.remove('fade-out');
+      }, 400);
+    }
+
+    setInterval(cycleTagline, 2500);
+  </script>
 
   <script>
     const html = document.documentElement;
