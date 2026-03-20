@@ -123,6 +123,10 @@ section {
   padding-top: 80px;
 }
 
+#experience {
+  padding-top: 40px;
+}
+
 .section-title {
   font-size: 13px;
   font-weight: 600;
@@ -355,6 +359,32 @@ mark {
 .timeline-content strong { color: var(--text); font-weight: 500; }
 
 .timeline-content a { color: var(--accent-light); }
+
+.exp-details { margin-top: 0.5rem; }
+
+.exp-summary {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.exp-toggle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-light);
+  margin-left: 2px;
+}
+
+.exp-body {
+  padding-left: 1.2em;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+  margin-top: 0.75rem;
+}
+
+.exp-body li { margin-bottom: 0.5rem; }
+.exp-body li:last-child { margin-bottom: 0; }
 
 .role-separator { color: var(--muted); font-weight: 300; }
 

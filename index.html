@@ -68,10 +68,13 @@
                 <p class="company">Grocery Picking App</p>
               </div>
             </div>
-            <ul>
-              <li>Led the E2E reliability overhaul with two Android developers — audited the test suite, measured baseline stability at 45%, and designed a framework that brought it to <strong>100%</strong>, cutting the release cycle in half. Also architected crash-resilient event tracking with zero production incidents.</li>
-              <li>Shipped Scheduled Orders UX (<strong>~£1M</strong> incremental revenue across <strong>~2k</strong> partner sites) and Variable Weight Pre-Auth (expected to save <strong>£5M</strong>) — the latter onboarded onto a server-driven UI framework in under a week, zero reported bugs.</li>
-            </ul>
+            <div class="exp-details">
+              <p class="exp-summary">Led E2E testing infrastructure and architected a crash-resilient event tracking system. Shipped features generating millions in revenue and savings<span class="exp-toggle">...more</span></p>
+              <ul class="exp-body">
+                <li>Led the E2E reliability overhaul with two Android developers — audited the test suite, measured baseline stability at 45%, and designed a framework that brought it to <strong>100%</strong>, cutting the release cycle in half. Also architected crash-resilient event tracking with zero production incidents.</li>
+                <li>Shipped Scheduled Orders UX (<strong>~£1M</strong> incremental revenue across <strong>~2k</strong> partner sites) and Variable Weight Pre-Auth (expected to save <strong>£5M</strong>) — the latter onboarded onto a server-driven UI framework in under a week, zero reported bugs.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -86,10 +89,13 @@
                 <p class="company">Transport · Mobile Platform · 100M+ downloads</p>
               </div>
             </div>
-            <ul>
-              <li>As tech lead with two Android developers, I drove the Aloha design system SDK — used by <strong>50+</strong> internal products, saving <strong>3,000+</strong> hours per product — introducing architecture for design system components with unit testing, iOS/Android parity, pixel-perfect animations, and CI/CD automation.</li>
-              <li>As the sole Android developer, I built <strong>GoTransit from scratch</strong> — diving deep into Android architecture to make it scalable from day one, while delivering ambitious, animation-heavy designs that pushed the UI layer hard. It's now <strong>Jakarta's #1 public transport ticket app</strong>, with multiple industry awards.</li>
-            </ul>
+            <div class="exp-details">
+              <p class="exp-summary">From shipping full-stack features for the transport product, to architecting the public transit app from scratch, to leading the design system SDK on Android<span class="exp-toggle">...more</span></p>
+              <ul class="exp-body">
+                <li>As tech lead with two Android developers, I drove the Aloha design system SDK — used by <strong>50+</strong> internal products, saving <strong>3,000+</strong> hours per product — introducing architecture for design system components with unit testing, iOS/Android parity, pixel-perfect animations, and CI/CD automation.</li>
+                <li>As the sole Android developer, I built <strong>GoTransit from scratch</strong> — diving deep into Android architecture to make it scalable from day one, while delivering ambitious, animation-heavy designs that pushed the UI layer hard. It's now <strong>Jakarta's #1 public transport ticket app</strong>, with multiple industry awards.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -189,6 +195,35 @@
     }
 
     setInterval(cycleTagline, 2500);
+  </script>
+
+  <script>
+    document.querySelectorAll('.exp-details').forEach(container => {
+      const summary = container.querySelector('.exp-summary');
+      const body = container.querySelector('.exp-body');
+      const toggle = container.querySelector('.exp-toggle');
+      let isOpen = false;
+
+      body.style.overflow = 'hidden';
+      body.style.maxHeight = '0';
+      body.style.opacity = '0';
+      body.style.transition = 'max-height 0.4s ease, opacity 0.3s ease';
+
+      summary.style.cursor = 'pointer';
+      summary.addEventListener('click', () => {
+        if (isOpen) {
+          isOpen = false;
+          toggle.textContent = '...more';
+          body.style.maxHeight = '0';
+          body.style.opacity = '0';
+        } else {
+          isOpen = true;
+          toggle.textContent = '...less';
+          body.style.maxHeight = body.scrollHeight + 'px';
+          body.style.opacity = '1';
+        }
+      });
+    });
   </script>
 
   <script>
